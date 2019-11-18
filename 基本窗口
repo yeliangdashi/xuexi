@@ -1,0 +1,35 @@
+package ui;
+
+import javax.swing.JFrame;
+
+/**
+ * 自定义游戏窗体的步骤：
+ * 1.写一个类，继承JFrame
+ * 如何继承：在类名后面加extends JFrame
+ * 2.写一个构造方法，确定窗体的特点
+ *
+ */
+public class GameFrame extends JFrame {
+	/**
+	 * 构造方法 方法名和类名一样
+	 * 构造方法的作用：模具
+	 */
+	public GameFrame(){
+		
+		setTitle("三国战纪");//设置窗口名字
+		setSize(1000,600);//设置窗口大小
+	}
+	/**
+	 * public Static void main(String arg[]){}固定格式
+	 * mian:java程序的入口
+	 * @param arg
+	 */
+	public static void main(String arg[]){
+		//创建窗口 格式：类名 窗口名=new 类名();
+		GameFrame frame=new GameFrame();
+		//显示窗口 格式：窗口名.setVisible(??)
+		//??:true or false 显示或者隐藏
+		frame.setVisible(true);
+	}
+
+}
